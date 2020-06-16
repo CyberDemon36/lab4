@@ -17,12 +17,6 @@ session_start();
     <form >
     <input type="text" name="name" placeholder="Name">
     <input type="text" name="surname" placeholder="Surname">
-    <!-- <select name="lang" class="slct">
-        <option value="ru">Русский</option>
-        <option value="ua">Українська</option>
-        <option value="en">English</option>
-        <option value="it">Italiano</option>
-    </select> -->
     <input type="text" name="lang" placeholder="Language">
     <input type="button" id="send" value="Search">
     </form>
@@ -49,7 +43,7 @@ session_start();
         var inp_name = document.querySelector('input[name=name]');
         var inp_surname = document.querySelector('input[name=surname]');
         var inp_lang = document.querySelector('input[name=lang]');
-        // var inp_lang = document.querySelector('input[name=lang]');
+        
     
         document.querySelector('#send').onclick = function() {
             var params = 'name=' + inp_name.value + '&' + 'surname=' + inp_surname.value +
